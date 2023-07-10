@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rock Paper</title>
-    </head>
-    <body>
-        <h2>Rock Paper Game</h2>
-        <script src="./assets/js/script.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://fav.farm/🤖" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Rock Paper Scissor</h2>
+    </header>
+    <!-- header finished -->
+    <main>
+      <!-- first part -->
+      <h3 id="result"></h3>
+      <p id="win-or-lose">Score 5 points to win</p>
+      <div class="container">
+        <div class="score-board">
+          <div class="player-emoji card" id="player-choice">❔</div>
+          <p >Player : <span id="current-player-score"></span></p>
+        </div>
+
+        <div class="score-board">
+          <div class="computer-emoji card" id="computer-choice">❔</div>
+          <p >Computer : <span id="current-computer-score"> </span></p>
+        </div>
+      </div>
+      <!-- second part -->
+      <div class="cards">
+        <div class="card" id="rock" data-value="rock">👊</div>
+        <div class="card" id="paper" data-value="paper">🤚</div>
+        <div class="card" id="scissor" data-value="scissor">✌</div>
+      </div>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+      <p>
+        © 2023 All Rights Reserved | Design by
+        <a href="https://rijoksd.netlify.app/" target="_blank"> Rijo Sebastian</a>
+      </p>
+    </footer>
+    <div class="box  " id="winner-box">
+        <p class="box-title" id="win-status">You won!</p>
+        <button class="box-btn" id="restart-btn">Play again</button>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
- 

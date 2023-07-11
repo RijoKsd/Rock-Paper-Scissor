@@ -107,13 +107,9 @@ function playRound(playerSelection, computerSelection) {
   if (playerSelection == computerSelection) {
     result.textContent = "Draw";
     winOrLose.textContent = ` ${playerSelection} draw with  ${computerSelection}`;
-  } else if (playerSelection === "rock" && computerSelection === "paper") {
-    result.textContent = "You Win ! ";
-
-    winOrLose.textContent = ` ${playerSelection} beats ${computerSelection}`;
-    playerScore++;
-    currentPlayerScore.textContent = playerScore;
-  } else if (playerSelection === "paper" && computerSelection === "rock") {
+  } 
+ 
+  else if (playerSelection === "paper" && computerSelection === "rock") {
     result.textContent = "You Win ! ";
     winOrLose.textContent = ` ${playerSelection} beats ${computerSelection}`;
     playerScore++;
@@ -124,19 +120,16 @@ function playRound(playerSelection, computerSelection) {
     winOrLose.textContent = ` ${playerSelection} beats ${computerSelection}`;
     playerScore++;
     currentPlayerScore.textContent = playerScore;
-  } else if (playerSelection === "paper" && computerSelection === "rock") {
+  }
+ 
+ else if (playerSelection === "scissor" && computerSelection === "paper") {
     result.textContent = "You Win ! ";
 
     winOrLose.textContent = ` ${playerSelection} beats ${computerSelection}`;
     playerScore++;
     currentPlayerScore.textContent = playerScore;
-  } else if (playerSelection === "scissor" && computerSelection === "paper") {
-    result.textContent = "You Win ! ";
-
-    winOrLose.textContent = ` ${playerSelection} beats ${computerSelection}`;
-    playerScore++;
-    currentPlayerScore.textContent = playerScore;
-  } else {
+  }
+   else {
     result.textContent = "You Lose! ! ";
     winOrLose.textContent = `${computerSelection} beats ${playerSelection}`;
     computerScore++;

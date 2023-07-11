@@ -160,3 +160,32 @@ footer a {
         font-size: 4rem;
     }
   }
+
+  /*  media query for 375 px width display */
+  @media screen and (max-width: 376px) {
+    header h2 {
+        font-size: 1.8rem;
+    }
+   .score-board .card{
+    font-size: 4.5rem;
+    width:120px;
+    height: 115px;
+   }
+    main{
+      height: 90vh;
+    }
+    
+  }
+
+   /*  media query for 375 px width display */
+   @media screen and (max-width: 320px) {
+    .score-board .card{
+     font-size: 4.5rem;
+     width:120px;
+     height: 120px;
+    }
+     main{
+       height: 125vh;
+     }
+     
+   }
